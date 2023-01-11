@@ -2,8 +2,8 @@
 
 namespace Hotelchamp\Larabee\Resources;
 
-use ChargeBee_Customer as Customer;
-use ChargeBee_Subscription as Subscription;
+use ChargeBee\ChargeBee\Models\Customer;
+use ChargeBee\ChargeBee\Models\Subscription;
 use Illuminate\Support\Collection;
 
 class Subscriptions extends FilterableResource

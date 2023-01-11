@@ -2,16 +2,16 @@
 
 namespace Hotelchamp\Larabee\Resources;
 
-use ChargeBee_Subscription as CbSubscription;
+use ChargeBee\ChargeBee\Models\Subscription;;
 
 class InvoiceEstimate
 {
     /**
      * Chargebee subscription
      *
-     * @var CbSubscription $base
+     * @var Subscription $base
      */
-    protected CbSubscription $base;
+    protected Subscription $base;
 
     /**
      * Estimated subscription renewal amount
@@ -23,9 +23,9 @@ class InvoiceEstimate
     /**
      * Construct a InvoiceEstimate
      *
-     * @param CbSubscription $base
+     * @param Subscription $base
      */
-    public function __construct(CbSubscription $base)
+    public function __construct(Subscription $base)
     {
         $this->base = $base;
         $this->setTotalDue();

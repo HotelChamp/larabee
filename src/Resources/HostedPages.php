@@ -2,7 +2,7 @@
 
 namespace Hotelchamp\Larabee\Resources;
 
-use ChargeBee_HostedPage as HostedPage;
+use ChargeBee\ChargeBee\Models\HostedPage;
 
 class HostedPages
 {

@@ -2,7 +2,7 @@
 
 namespace Hotelchamp\Larabee\Resources;
 
-use ChargeBee_PortalSession as PortalSession;
+use ChargeBee\ChargeBee\Models\PortalSession;
 
 class PortalSessions
 {
