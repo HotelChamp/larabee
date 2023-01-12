@@ -2,7 +2,7 @@
 
 namespace Hotelchamp\Larabee;
 
-use ChargeBee\ChargeBee\Environment;
+use ChargeBee_Environment as Environment;
 use Hotelchamp\Larabee\Resources\Customers;
 use Hotelchamp\Larabee\Resources\Estimates;
 use Hotelchamp\Larabee\Resources\HostedPages;

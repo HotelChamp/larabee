@@ -2,7 +2,7 @@
 
 namespace Hotelchamp\Larabee\Resources;
 
-use ChargeBee\ChargeBee\Models\Customer;
+use ChargeBee_Customer as Customer;
 use Illuminate\Support\Collection;
 
 class Customers extends FilterableResource
