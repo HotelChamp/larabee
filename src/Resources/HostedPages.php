@@ -27,4 +27,15 @@ class HostedPages
     {
         return HostedPage::checkoutNew($data)->hostedPage();
     }
+
+    /**
+     * Update payment method.
+     *
+     * @param array $data
+     * @return HostedPage
+     */
+    public function updatePaymentMethod(array $data): HostedPage
+    {
+        return HostedPage::updatePaymentMethod($data)->hostedPage();
+    }
 }
