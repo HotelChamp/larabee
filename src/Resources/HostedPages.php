@@ -29,12 +29,12 @@ class HostedPages
     }
 
     /**
-     * Update payment method.
+     * Manage payment sources.
      *
      * @param array $data
      * @return HostedPage
      */
-    public function updatePaymentMethod(array $data): HostedPage
+    public function managePaymentSources(array $data): HostedPage
     {
         return HostedPage::managePaymentSources($data)->hostedPage();
     }
