@@ -18,8 +18,7 @@
     ],
     "require": {
         "php": "^8.0",
-        "chargebee/chargebee-php": ">=2, <3",
-        "illuminate/contracts": "^8.37",
+        "chargebee/chargebee-php": "^v3.17.0",
         "spatie/laravel-package-tools": "^1.4.3"
     },
     "require-dev": {
