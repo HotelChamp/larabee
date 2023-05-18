@@ -2,7 +2,7 @@
 
 namespace Hotelchamp\Larabee\Resources;
 
-use ChargeBee_Invoice as Invoice;
+use ChargeBee\ChargeBee\Models\Invoice;
 use Illuminate\Support\Collection;
 
 class Invoices extends FilterableResource

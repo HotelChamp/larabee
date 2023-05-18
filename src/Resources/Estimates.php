@@ -2,7 +2,7 @@
 
 namespace Hotelchamp\Larabee\Resources;
 
-use ChargeBee_Estimate as Estimate;
+use ChargeBee\ChargeBee\Models\Estimate;
 
 class Estimates
 {

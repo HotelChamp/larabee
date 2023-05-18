@@ -2,7 +2,7 @@
 
 namespace Hotelchamp\Larabee\Resources;
 
-use ChargeBee_Plan as Plan;
+use ChargeBee\ChargeBee\Models\Plan;
 use Illuminate\Support\Collection;
 
 class Plans extends FilterableResource
