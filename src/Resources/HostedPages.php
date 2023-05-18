@@ -36,6 +36,6 @@ class HostedPages
      */
     public function updatePaymentMethod(array $data): HostedPage
     {
-        return HostedPage::updatePaymentMethod($data)->hostedPage();
+        return HostedPage::managePaymentSources($data)->hostedPage();
     }
 }
