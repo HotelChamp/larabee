@@ -27,15 +27,4 @@ class HostedPages
     {
         return HostedPage::checkoutNew($data)->hostedPage();
     }
-
-    /**
-     * Manage payment sources.
-     *
-     * @param array $data
-     * @return HostedPage
-     */
-    public function managePaymentSources(array $data): HostedPage
-    {
-        return HostedPage::managePaymentSources($data)->hostedPage();
-    }
 }
