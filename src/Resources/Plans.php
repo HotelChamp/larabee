@@ -5,6 +5,9 @@ namespace Hotelchamp\Larabee\Resources;
 use ChargeBee\ChargeBee\Models\Plan;
 use Illuminate\Support\Collection;
 
+/**
+ * @deprecated Only used with PC 1.0. For PC 2.0, please see Items
+ */
 class Plans extends FilterableResource
 {
     /**
