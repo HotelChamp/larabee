@@ -3,7 +3,6 @@
 namespace Hotelchamp\Larabee\Resources;
 
 use ChargeBee\ChargeBee\Models\Item;
-use ChargeBee\ChargeBee\Models\Plan;
 use Illuminate\Support\Collection;
 
 class Items extends FilterableResource
@@ -16,9 +15,9 @@ class Items extends FilterableResource
      */
     public function all(): Collection
     {
-        $all = Item::all($this->filter);
+        $items = Item::all($this->filter);
 
-        return collect($all)->map->item();
+        return collect($items)->map->item();
     }
 
     /**
@@ -40,7 +39,7 @@ class Items extends FilterableResource
      */
     public function findByPlanId(string $itemId): ?Item
     {
-        return $this->where('item_id', $itemId)->get()->first();
+        return Item::retrieve($itemId)->item();
     }
 
     /**
@@ -49,9 +48,9 @@ class Items extends FilterableResource
      * @param array $item
      * @return Item|null
      */
-    public function create(array $item): ?Item
+    public function create(array $data): ?Item
     {
-        return Item::create($item)->item();
+        return Item::create($data)->item();
     }
 
     /**
