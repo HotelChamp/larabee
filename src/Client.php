@@ -7,6 +7,7 @@ use Hotelchamp\Larabee\Resources\Customers;
 use Hotelchamp\Larabee\Resources\Estimates;
 use Hotelchamp\Larabee\Resources\HostedPages;
 use Hotelchamp\Larabee\Resources\Invoices;
+use Hotelchamp\Larabee\Resources\Items;
 use Hotelchamp\Larabee\Resources\Plans;
 use Hotelchamp\Larabee\Resources\PortalSessions;
 use Hotelchamp\Larabee\Resources\Subscriptions;
@@ -97,5 +98,10 @@ class Client implements ClientContract
     public function hostedPages(): HostedPages
     {
         return new HostedPages();
+    }
+
+    public function items(): Items
+    {
+        return new Items();
     }
 }

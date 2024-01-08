@@ -17,6 +17,7 @@ composer test
 ## Credits
 
 - [Khalid Charaa](https://github.com/kcharaa)
+- [Sander van Kasteel](https://github.com/sandervankasteel/)
 
 ## License
 
