@@ -15,7 +15,7 @@ class Subscriptions extends FilterableResource
      */
     public function all(): Collection
     {
-        if ($this->filter['withEstimate']) {
+        if ($this->filter && $this->filter['withEstimate']) {
             return $this->allWithEstimate();
         }
 
