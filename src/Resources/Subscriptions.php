@@ -15,7 +15,7 @@ class Subscriptions extends FilterableResource
      */
     public function all(): Collection
     {
-        if ($this->filter && $this->filter['withEstimate']) {
+        if ($this->filter && in_array('withEstimate', $this->filter)) {
             return $this->allWithEstimate();
         }
 
@@ -42,7 +42,7 @@ class Subscriptions extends FilterableResource
      */
     public function findById(string $id): mixed
     {
-        if ($this->filter && $this->filter['withEstimate']) {
+        if ($this->filter && in_array('withEstimate', $this->filter)) {
             return $this->withEstimate($id);
         }
 
