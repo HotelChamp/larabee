@@ -64,4 +64,15 @@ class Invoices extends FilterableResource
     {
         return Invoice::delete($id)->invoice();
     }
+
+    /**
+     * Charge an invoice
+     *
+     * @param array $data
+     * @return Invoice
+     */
+    public function charge(array $data): Invoice
+    {
+        return Invoice::charge($data)->invoice();
+    }
 }
