@@ -12,6 +12,7 @@ use Hotelchamp\Larabee\Resources\Plans;
 use Hotelchamp\Larabee\Resources\PortalSessions;
 use Hotelchamp\Larabee\Resources\Subscriptions;
 use Hotelchamp\Larabee\Contracts\Client as ClientContract;
+use Hotelchamp\Larabee\Resources\UnbilledCharges;
 
 class Client implements ClientContract
 {
@@ -100,8 +101,23 @@ class Client implements ClientContract
         return new HostedPages();
     }
 
+    /**
+     * Handle items endpoint
+     *
+     * @return Items
+     */
     public function items(): Items
     {
         return new Items();
+    }
+
+    /**
+     * Handle unbilled charges endpoint
+     *
+     * @return UnbilledCharges
+     */
+    public function unbilledCharges(): UnbilledCharges
+    {
+        return new UnbilledCharges();
     }
 }
